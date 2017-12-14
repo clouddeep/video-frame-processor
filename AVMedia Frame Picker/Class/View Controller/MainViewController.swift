@@ -43,7 +43,7 @@ class MainViewController: UIViewController {
     fileprivate func presentAngleChangeAlert() {
         let alert = UIAlertController(title: "Change angle", message: nil, preferredStyle: .alert)
         alert.addTextField { (textField) in
-            textField.keyboardType = .numberPad
+            textField.keyboardType = .numbersAndPunctuation
             textField.placeholder = "Enter new angle"
 
             if let angle = AFPProfile.angle {
@@ -76,7 +76,6 @@ extension MainViewController: UICollectionViewDelegateFlowLayout {
         vc.photoAsset = allVideo.object(at: indexPath.item)
         
         present(nc, animated: true, completion: nil)
-//        navigationController?.pushViewController(nc, animated: true)
         
         collectionView.deselectItem(at: indexPath, animated: true)
     }
