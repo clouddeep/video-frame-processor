@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F2DB1ED1FDF797C0073C4E7 /* AFPNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2DB1EC1FDF797C0073C4E7 /* AFPNavigationController.swift */; };
 		0F7482041FDA2FDF00FFC870 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7482031FDA2FDF00FFC870 /* AppDelegate.swift */; };
-		0F7482061FDA2FDF00FFC870 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7482051FDA2FDF00FFC870 /* ViewController.swift */; };
+		0F7482061FDA2FDF00FFC870 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7482051FDA2FDF00FFC870 /* MainViewController.swift */; };
 		0F7482091FDA2FDF00FFC870 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F7482071FDA2FDF00FFC870 /* Main.storyboard */; };
 		0F74820B1FDA2FDF00FFC870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F74820A1FDA2FDF00FFC870 /* Assets.xcassets */; };
 		0F74820E1FDA2FDF00FFC870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F74820C1FDA2FDF00FFC870 /* LaunchScreen.storyboard */; };
+		0FC6A4381FDA4DDD00FE7860 /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC6A4371FDA4DDD00FE7860 /* GridCell.swift */; };
+		0FC6A43A1FDA574A00FE7860 /* VideoFrameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC6A4391FDA574A00FE7860 /* VideoFrameViewController.swift */; };
+		0FC6A43D1FDBB0CE00FE7860 /* VideoConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC6A43C1FDBB0CE00FE7860 /* VideoConverter.swift */; };
+		0FC6A43F1FDBB2F100FE7860 /* AFPProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC6A43E1FDBB2F100FE7860 /* AFPProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F2DB1EC1FDF797C0073C4E7 /* AFPNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFPNavigationController.swift; sourceTree = "<group>"; };
 		0F7482001FDA2FDF00FFC870 /* AVMedia Frame Picker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AVMedia Frame Picker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F7482031FDA2FDF00FFC870 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0F7482051FDA2FDF00FFC870 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0F7482051FDA2FDF00FFC870 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0F7482081FDA2FDF00FFC870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F74820A1FDA2FDF00FFC870 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F74820D1FDA2FDF00FFC870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F74820F1FDA2FDF00FFC870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FC6A4371FDA4DDD00FE7860 /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
+		0FC6A4391FDA574A00FE7860 /* VideoFrameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFrameViewController.swift; sourceTree = "<group>"; };
+		0FC6A43C1FDBB0CE00FE7860 /* VideoConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoConverter.swift; sourceTree = "<group>"; };
+		0FC6A43E1FDBB2F100FE7860 /* AFPProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFPProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,67 @@
 		0F7482021FDA2FDF00FFC870 /* AVMedia Frame Picker */ = {
 			isa = PBXGroup;
 			children = (
-				0F7482031FDA2FDF00FFC870 /* AppDelegate.swift */,
-				0F7482051FDA2FDF00FFC870 /* ViewController.swift */,
+				0F7482161FDA31F700FFC870 /* Class */,
+				0F7482151FDA2FE600FFC870 /* Support files */,
+			);
+			path = "AVMedia Frame Picker";
+			sourceTree = "<group>";
+		};
+		0F7482151FDA2FE600FFC870 /* Support files */ = {
+			isa = PBXGroup;
+			children = (
 				0F7482071FDA2FDF00FFC870 /* Main.storyboard */,
 				0F74820A1FDA2FDF00FFC870 /* Assets.xcassets */,
 				0F74820C1FDA2FDF00FFC870 /* LaunchScreen.storyboard */,
 				0F74820F1FDA2FDF00FFC870 /* Info.plist */,
 			);
-			path = "AVMedia Frame Picker";
+			path = "Support files";
+			sourceTree = "<group>";
+		};
+		0F7482161FDA31F700FFC870 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				0FC6A43B1FDBB0AB00FE7860 /* Model */,
+				0FC6A4351FDA4DC000FE7860 /* View */,
+				0F7482171FDA321500FFC870 /* View Controller */,
+				0F7482031FDA2FDF00FFC870 /* AppDelegate.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		0F7482171FDA321500FFC870 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0F7482051FDA2FDF00FFC870 /* MainViewController.swift */,
+				0FC6A4391FDA574A00FE7860 /* VideoFrameViewController.swift */,
+				0F2DB1EC1FDF797C0073C4E7 /* AFPNavigationController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		0FC6A4351FDA4DC000FE7860 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0FC6A4361FDA4DC600FE7860 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0FC6A4361FDA4DC600FE7860 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0FC6A4371FDA4DDD00FE7860 /* GridCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0FC6A43B1FDBB0AB00FE7860 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0FC6A43C1FDBB0CE00FE7860 /* VideoConverter.swift */,
+				0FC6A43E1FDBB2F100FE7860 /* AFPProfile.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +199,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F7482061FDA2FDF00FFC870 /* ViewController.swift in Sources */,
+				0F7482061FDA2FDF00FFC870 /* MainViewController.swift in Sources */,
+				0F2DB1ED1FDF797C0073C4E7 /* AFPNavigationController.swift in Sources */,
+				0FC6A43F1FDBB2F100FE7860 /* AFPProfile.swift in Sources */,
 				0F7482041FDA2FDF00FFC870 /* AppDelegate.swift in Sources */,
+				0FC6A43A1FDA574A00FE7860 /* VideoFrameViewController.swift in Sources */,
+				0FC6A4381FDA4DDD00FE7860 /* GridCell.swift in Sources */,
+				0FC6A43D1FDBB0CE00FE7860 /* VideoConverter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,8 +343,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 95VE89RM7W;
-				INFOPLIST_FILE = "AVMedia Frame Picker/Info.plist";
+				DEVELOPMENT_TEAM = 6PQG365MLP;
+				INFOPLIST_FILE = "AVMedia Frame Picker/Support files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shoujhengduan.AVMedia-Frame-Picker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,8 +358,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 95VE89RM7W;
-				INFOPLIST_FILE = "AVMedia Frame Picker/Info.plist";
+				DEVELOPMENT_TEAM = 6PQG365MLP;
+				INFOPLIST_FILE = "AVMedia Frame Picker/Support files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shoujhengduan.AVMedia-Frame-Picker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
